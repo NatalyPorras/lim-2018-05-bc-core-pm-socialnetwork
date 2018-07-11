@@ -19,7 +19,11 @@ const createUser = (email, password, repeatPassword) => {
     console.log('Your password doesnt mach');
     alert('Your password doesnt mach');
   }
+<<<<<<< HEAD
 };
+=======
+}
+>>>>>>> fb7e98aa371cadac756c2890cad4dac6690f3d41
 
 const signInUser = (email, password) => {
   firebase.auth().signInWithEmailAndPassword(email, password).then(() => {
@@ -36,7 +40,11 @@ const signInUser = (email, password) => {
       }
       console.log(error);
     });
+<<<<<<< HEAD
 };
+=======
+}
+>>>>>>> fb7e98aa371cadac756c2890cad4dac6690f3d41
 
 const resetPassword = (email, password) => {
   firebase.auth().sendPasswordResetEmail(
@@ -56,7 +64,11 @@ const resetPassword = (email, password) => {
       }
       console.log(error);
     });
+<<<<<<< HEAD
 };
+=======
+}
+>>>>>>> fb7e98aa371cadac756c2890cad4dac6690f3d41
 
 const loginWithGoogle = () => {
   // Using a popup.
@@ -70,7 +82,11 @@ const loginWithGoogle = () => {
     var user = result.user;
     window.location.assign('main.html')
   });
+<<<<<<< HEAD
 };
+=======
+}
+>>>>>>> fb7e98aa371cadac756c2890cad4dac6690f3d41
 
 const loginWithFacebook = () => {
   // Sign in using a popup.
@@ -83,7 +99,11 @@ const loginWithFacebook = () => {
     var user = result.user;
     window.location.assign('main.html')
   });
+<<<<<<< HEAD
 };
+=======
+}
+>>>>>>> fb7e98aa371cadac756c2890cad4dac6690f3d41
 
 const loginWithTwitter = () => {
   // Using a popup.
@@ -96,6 +116,7 @@ const loginWithTwitter = () => {
     var user = result.user;
     window.location.assign('main.html')
   });
+<<<<<<< HEAD
 };
 
 (function ($) {
@@ -160,3 +181,6 @@ const loginWithTwitter = () => {
  } */
 
 })(jQuery);
+=======
+}
+>>>>>>> fb7e98aa371cadac756c2890cad4dac6690f3d41
