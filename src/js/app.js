@@ -1,8 +1,8 @@
-const createUser = (email, password, repeatPassword) => {
+window.createUser = (email, password, repeatPassword) => {
   if (password === repeatPassword) {
     firebase.auth().createUserWithEmailAndPassword(email, password)
       .then(() => {
-        window.location.assign('signin.html')
+        window.location.assign('index.html')
       })
       .catch(function (error) {
         // Handle Errors here.
@@ -20,12 +20,16 @@ const createUser = (email, password, repeatPassword) => {
     alert('Your password doesnt mach');
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 };
 =======
 }
 >>>>>>> fb7e98aa371cadac756c2890cad4dac6690f3d41
+=======
+};
+>>>>>>> c8249bafa0db07f1320fb9bb6847c23880cf1dc8
 
-const signInUser = (email, password) => {
+window.signInUser = (email, password) => {
   firebase.auth().signInWithEmailAndPassword(email, password).then(() => {
     window.location.assign('main.html')
   })
@@ -41,12 +45,16 @@ const signInUser = (email, password) => {
       console.log(error);
     });
 <<<<<<< HEAD
+<<<<<<< HEAD
 };
 =======
 }
 >>>>>>> fb7e98aa371cadac756c2890cad4dac6690f3d41
+=======
+};
+>>>>>>> c8249bafa0db07f1320fb9bb6847c23880cf1dc8
 
-const resetPassword = (email, password) => {
+window.resetPassword = (email, password) => {
   firebase.auth().sendPasswordResetEmail(
     getEmail.value)
     .then(function () {
@@ -65,12 +73,16 @@ const resetPassword = (email, password) => {
       console.log(error);
     });
 <<<<<<< HEAD
+<<<<<<< HEAD
 };
 =======
 }
 >>>>>>> fb7e98aa371cadac756c2890cad4dac6690f3d41
+=======
+};
+>>>>>>> c8249bafa0db07f1320fb9bb6847c23880cf1dc8
 
-const loginWithGoogle = () => {
+window.loginWithGoogle = () => {
   // Using a popup.
   var provider = new firebase.auth.GoogleAuthProvider();
   provider.addScope('profile');
@@ -83,12 +95,16 @@ const loginWithGoogle = () => {
     window.location.assign('main.html')
   });
 <<<<<<< HEAD
+<<<<<<< HEAD
 };
 =======
 }
 >>>>>>> fb7e98aa371cadac756c2890cad4dac6690f3d41
+=======
+};
+>>>>>>> c8249bafa0db07f1320fb9bb6847c23880cf1dc8
 
-const loginWithFacebook = () => {
+window.loginWithFacebook = () => {
   // Sign in using a popup.
   var provider = new firebase.auth.FacebookAuthProvider();
   provider.addScope('user_birthday');
@@ -100,12 +116,16 @@ const loginWithFacebook = () => {
     window.location.assign('main.html')
   });
 <<<<<<< HEAD
+<<<<<<< HEAD
 };
 =======
 }
 >>>>>>> fb7e98aa371cadac756c2890cad4dac6690f3d41
+=======
+};
+>>>>>>> c8249bafa0db07f1320fb9bb6847c23880cf1dc8
 
-const loginWithTwitter = () => {
+window.loginWithTwitter = () => {
   // Using a popup.
   var provider = new firebase.auth.TwitterAuthProvider();
   firebase.auth().signInWithPopup(provider).then(function (result) {
@@ -117,6 +137,9 @@ const loginWithTwitter = () => {
     window.location.assign('main.html')
   });
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c8249bafa0db07f1320fb9bb6847c23880cf1dc8
 };
 
 (function ($) {
@@ -132,55 +155,10 @@ const loginWithTwitter = () => {
       }
     })
   })
-
-/* // [ Validate ]
- var input = $('.validate-input .input100');
- 
- $('.validate-form').on('submit', function () {
-   var check = true;
- 
-   for (var i = 0; i < input.length; i++) {
-     if (validate(input[i]) == false) {
-       showValidate(input[i]);
-       check = false;
-     }
-   }
-   return check;
- });
- 
- 
- $('.validate-form .input100').each(function () {
-   $(this).focus(function () {
-     hideValidate(this);
-   });
- });
- 
- function validate(input) {
-   if ($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
-     if ($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
-       return false;
-     }
-   }
-   else {
-     if ($(input).val().trim() == '') {
-       return false;
-     }
-   }
- }
- 
- function showValidate(input) {
-   var thisAlert = $(input).parent();
- 
-   $(thisAlert).addClass('alert-validate');
- }
- 
- function hideValidate(input) {
-   var thisAlert = $(input).parent();
- 
-   $(thisAlert).removeClass('alert-validate');
- } */
-
 })(jQuery);
+<<<<<<< HEAD
 =======
 }
 >>>>>>> fb7e98aa371cadac756c2890cad4dac6690f3d41
+=======
+>>>>>>> c8249bafa0db07f1320fb9bb6847c23880cf1dc8
