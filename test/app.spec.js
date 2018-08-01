@@ -263,4 +263,21 @@ describe('auth', () => {
     
   })
   
+  describe('Crear POST',()=>{
+    var postData = {
+      body: "Salu2",
+      countlike:1,
+      imageName: "IMG_20180725_230605.jpg",
+      imageUrl:"https://firebasestorage.googleapis.com/v0/b/my-...",
+      privacy:"public",
+      uid:"2wjt1SSeQyObq1tTEiyPK7RD3P43",
+      userName:"ΥΞNΙFΞR ΛLΞΧΛΝDRΛ"
+    };
+    it('Creando post',()=>{
+      const result = writeNewPost(postData.uid,postData.userName,postData.body,postData.imageName,postData.imageUrl,postData.privacy,postData.countlike)
+     
+      assert.equal(typeof result,'string');
+    })
+    
+  })
 });

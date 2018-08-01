@@ -94,6 +94,8 @@ window.writeUserData = (userId, name, email, imageUrl) => {
   });
 };
 
+window.getTaskList = () => firebase.database().ref('posts').on('value');
+
 window.writeNewPost = (uid, userName, body, imageName, imageUrl, privacy, countlike) => {
   // A post entry.
   var postData = {
@@ -104,7 +106,6 @@ window.writeNewPost = (uid, userName, body, imageName, imageUrl, privacy, countl
     imageUrl: imageUrl,
     privacy: privacy,
     countlike: countlike,
-    timestamp: firebase.database.ServerValue.TIMESTAMP
   };
 
   // Get a key for a new Post.
